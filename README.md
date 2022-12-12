@@ -31,3 +31,6 @@ I am very happy that I was able to complete this project. It was a long journey.
 **If you want to access to CMS, please contant me on Discord - Kartoshechka#3776**
 
 Client Preview
+![client 1](https://user-images.githubusercontent.com/99285514/207178752-562e3ef7-e7da-4788-8994-ba419b2a2a40.png)
+![client 2](https://user-images.githubusercontent.com/99285514/207178778-8531bae3-301b-42e0-a1d9-88c28bba2ed5.png)
+
