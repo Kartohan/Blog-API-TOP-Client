@@ -16,16 +16,15 @@ What libraries did I use for the CMS:
 
 I am very happy that I was able to complete this project. It was a long journey. Although not everything in this project seems to me complete, but the main thing is that everything works, and I was finally able to create the first full stack application. Thanks "The Odin Project" for that!
 
-**If you want to get access to CMS, please contant me on Discord Kartoshechka#3776**
-
 ## Repo Links
 
-[Blog API | CMS | Repo](https://www.google.com)
-[Blog API | Server | Repo](https://www.google.com)
+[Blog API | CMS | Repo](https://www.google.com)<br/>
+[Blog API | Server | Repo](https://www.google.com)<br/>
 
 ## Live Links
 
-[Blog API | Client | Live](https://www.google.com)
-[Blog API | CMS | Live](https://www.google.com)
+[Blog API | Client | Live](https://www.google.com)<br/>
+[Blog API | CMS | Live](https://www.google.com)<br/>
+**If you want to access to CMS, please contant me on Discord Kartoshechka#3776**
 
 Client Preview
