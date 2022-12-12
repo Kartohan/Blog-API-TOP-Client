@@ -9,7 +9,7 @@ const PostComponent = ({ post }) => {
       <div className="relative overflow-hidden shadow-md pb-80 mb-3">
         <Link to={`/posts/${_id}`}>
           <img
-            src={`http://blog-api-top-server-production.up.railway.app:3001//${imageURL}`}
+            src={`http://blog-api-top-server-production.up.railway.app/${imageURL}`}
             alt={title}
             className="object-center absolute h-80 w-full object-cover shadow-lg rounded-lg hover:scale-110 transition duration-700"
           />

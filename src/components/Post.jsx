@@ -66,7 +66,7 @@ const Post = () => {
   useEffect(() => {
     axios
       .get(
-        `http://blog-api-top-server-production.up.railway.app:3001//api/posts/${post_id}`
+        `http://blog-api-top-server-production.up.railway.app/api/posts/${post_id}`
       )
       .then((res) => {
         setData(res.data);
@@ -83,7 +83,7 @@ const Post = () => {
     e.preventDefault();
     axios
       .post(
-        `http://blog-api-top-server-production.up.railway.app:3001//api/posts/${post_id}/new_comment`,
+        `http://blog-api-top-server-production.up.railway.app/api/posts/${post_id}/new_comment`,
         form
       )
       .then((res) => {
@@ -100,7 +100,7 @@ const Post = () => {
           <div className="h-96">
             <img
               className="h-full w-full object-cover rounded-lg shadow-lg"
-              src={`http://blog-api-top-server-production.up.railway.app:3001//${data.post.imageURL}`}
+              src={`http://blog-api-top-server-production.up.railway.app/${data.post.imageURL}`}
               alt=""
             />
           </div>
@@ -117,7 +117,7 @@ const Post = () => {
           <div className="text-center font-bold text-xl my-3">Send comment</div>
           {message && displayMessage(message)}
           <form
-            action={`http://blog-api-top-server-production.up.railway.app:3001//api/posts/${data.post._id}/new_comment`}
+            action={`http://blog-api-top-server-production.up.railway.app/api/posts/${data.post._id}/new_comment`}
             method="POST"
             className="min-w-fit lg:min-w-fit w-1/2 mx-auto"
             onSubmit={handleSubmit}
