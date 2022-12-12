@@ -7,7 +7,9 @@ import { Navbar, Dropdown, Avatar } from "flowbite-react";
 const Header = () => {
   const [category, setCategory] = useState([]);
   useEffect(() => {
-    fetch("http://blog-api-top-server-production.up.railway.app/api/category")
+    fetch(
+      "http://blog-api-top-server-production.up.railway.app:3001//api/category"
+    )
       .then((res) => {
         return res.json();
       })

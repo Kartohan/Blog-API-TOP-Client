@@ -9,7 +9,7 @@ const Category = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     fetch(
-      `http://blog-api-top-server-production.up.railway.app/api/category/${category_id}`
+      `http://blog-api-top-server-production.up.railway.app:3001//api/category/${category_id}`
     )
       .then((res) => res.json())
       .then((data) => {
