@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+[type="text"],
+[type="email"],
+[type="password"],
+textarea,
+select {
+  border-width: 0px !important;
+}
+
 @layer components {
   .hover-underline {
     display: inline-block;

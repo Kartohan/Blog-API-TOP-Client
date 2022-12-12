@@ -1,6 +1,4 @@
 import React from "react";
-import { useEffect } from "react";
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const Sidebar = ({ posts }) => {
@@ -12,12 +10,18 @@ const Sidebar = ({ posts }) => {
       <h1 className="font-bold border-b-rose-300 border-b-[1px] pb-1 mb-2">
         Pinned posts
       </h1>
-      {pinned &&
-        pinned.map((post) => (
-          <Link key={post._id} to={`/posts/${post._id}`}>
-            {post.title}
-          </Link>
-        ))}
+      <div className="flex flex-col gap-2">
+        {pinned &&
+          pinned.map((post) => (
+            <Link
+              className="font-bold hover:text-rose-500"
+              key={post._id}
+              to={`/posts/${post._id}`}
+            >
+              {post.title}
+            </Link>
+          ))}
+      </div>
     </div>
   );
 };

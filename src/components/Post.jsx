@@ -107,15 +107,15 @@ const Post = () => {
             </div>
             <div>{data.post.postDetail}</div>
           </div>
-          <div className="text-center font-bold text-xl mb-3">Send comment</div>
+          <div className="text-center font-bold text-xl my-3">Send comment</div>
           {message && displayMessage(message)}
           <form
             action={`http://localhost:3001/api/posts/${data.post._id}/new_comment`}
             method="POST"
-            className="min-w-fit w-1/2 mx-auto"
+            className="min-w-fit lg:min-w-fit w-1/2 mx-auto"
             onSubmit={handleSubmit}
           >
-            <div className="flex flex-row gap-x-5">
+            <div className="flex flex-row gap-x-5 flex-wrap lg:flex-nowrap">
               <div className="w-full flex flex-col">
                 <label className="p-1" htmlFor="firstname" />
                 <input
@@ -170,6 +170,12 @@ const Post = () => {
             />
           </form>
           <div className="text-center text-xl font-bold my-5">Comments</div>
+          {comments.length === 0 ? (
+            <h1 className="bg-blue-100 px-8 py-3 rounded-lg w-fit mx-auto my-5">
+              There is no comments
+            </h1>
+          ) : null}
+
           {comments && displayComments(comments)}
         </div>
       )}

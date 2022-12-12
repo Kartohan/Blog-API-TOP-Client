@@ -15,7 +15,7 @@ function App() {
           <Route path="/posts/:post_id" element={<Post />} />
         </Routes>
       </div>
-      <div className="bg-rose-50 px-12 py-3 block rounded-lg mx-auto w-fit">
+      <div className="bg-rose-50 px-12 py-3 block rounded-lg mx-auto w-fit my-3">
         Created by{" "}
         <a className="text-rose-600" href="https://github.com/Kartohan">
           {" "}
