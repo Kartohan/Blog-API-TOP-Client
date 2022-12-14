@@ -9,7 +9,7 @@ RUN npm install
 
 COPY . /app/
 
-RUN npm build
+RUN npm run build
 
 FROM nginx:alpine
 
@@ -19,7 +19,7 @@ WORKDIR /usr/share/nginx/html
 # Remove default nginx static assets
 RUN rm -rf ./*
 
-COPY --from=builder /dist .
+COPY --from=builder /app/dist .
 
 COPY .nginx/nginx.conf /etc/nginx/conf.d/default.conf
 
