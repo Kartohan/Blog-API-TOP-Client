@@ -3,11 +3,13 @@ import { useState, useEffect } from "react";
 import PostComponent from "./PostComponent";
 import Sidebar from "./Sidebar";
 import CommentsBar from "./CommentsBar";
+import axios from "axios";
+
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_URL}`)
+    fetch(`${import.meta.env.VITE_URL}api/posts`)
       .then((res) => res.json())
       .then((data) => {
         data.posts.reverse();
