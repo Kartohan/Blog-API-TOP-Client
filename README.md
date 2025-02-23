@@ -16,7 +16,9 @@ What libraries did I use for the CMS:
 
 I am very happy that I was able to complete this project. It was a long journey. Although not everything in this project seems to me complete, but the main thing is that everything works, and I was finally able to create the first full stack application. Thanks "The Odin Project" for that!
 
-There is only one problem left, it is necessary to get rid of the HashRouter and configure the work of the client part without it.
+There is only one problem left, it is necessary to get rid of the HashRouter and configure the work of the client part without it.<br/>
+
+23.02.2025 - Migrated to Render cloud application platform because Railway became paid. Also my MongoDB cluster became outdated so articles will be different when you open a website
 
 ## Repo Links
 
@@ -26,9 +28,9 @@ There is only one problem left, it is necessary to get rid of the HashRouter and
 
 ## Live Links
 
-[Blog API | Client | Live](https://blog-api-top-client-production.up.railway.app)<br/>
+[Blog API | Client | Live](https://blog-api-top-client.onrender.com/)<br/>
 
-[Blog API | CMS | Live](https://blog-api-top-cms-production.up.railway.app)<br/>
+[Blog API | CMS | Live](https://blog-api-top-cms.onrender.com/)<br/>
 
 **If you want to access to CMS, please contant me on Discord - Kartoshechka#3776**
 
